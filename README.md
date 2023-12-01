@@ -1,11 +1,12 @@
-# Web-minimal
+# Project-Title
 
-## Enabled GitLab functions
+This project was created by the template `Web-Minimal`. Only the following GitLab features are enabled:
 
     ├── Issues
     ├── Repository
     │   ├── Merge requests
     │   ├── Forks
+    │   ├── Git Large File Storage (LFS)
 
 ## Getting started
 
