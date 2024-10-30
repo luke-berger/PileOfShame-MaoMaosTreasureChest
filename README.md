@@ -1,5 +1,7 @@
-### Aufgabe 1
+# Aufgabe 1
 
-[Niclas über Luke]: #
-[Luke über Johann]: #
-[Johann über Niclas]: #
+<!--- P1 über P2 -->
+
+<!--- P2 über P3 -->
+
+<!--- P3 über P1 -->
