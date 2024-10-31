@@ -3,14 +3,38 @@ body {
   background-color: #ffe5b4;
 }
 
-/*opacity for imprint text */
+/* opacity for imprint text */
 .ImprintSection {
   color: #000; /* Fallback */
   color: rgba(0, 0, 0, 0.5);
 }
 
-/*opacity for imprint headers */
+/* opacity for imprint headers */
 .ImprintHeaders {
   color: #000; /* Fallback */
   color: rgb(0, 0, 0, 0.7);
+}
+
+/* Trennlinie über footer */
+footer {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+/* Alignment Nav */
+.navElement {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* Divider below header */
+.DividerLineHeader {
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+}
+
+/* Divider below nav */
+.DividerLineNav {
+  border-bottom: 1px solid black;
+  padding-top: 10px;
 }
