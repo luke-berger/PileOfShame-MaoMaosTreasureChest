@@ -38,3 +38,9 @@ footer {
   border-bottom: 1px solid black;
   padding-top: 10px;
 }
+
+.MaoMaoImage {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
