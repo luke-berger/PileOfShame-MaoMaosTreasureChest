@@ -5,7 +5,7 @@ header {
 }
 
 body {
-  font-family: "Baskerville";
+  font-family: 'Baskerville';
   background-color: #ffe7d7;
 }
 
@@ -52,33 +52,36 @@ footer {
   padding-top: 10px;
 }
 
-.MaoMaoImage {
+/* Logo settings */
+.MaoMaoImage img {
   position: absolute;
   left: 15px;
   top: 15px;
-}
-
-.MaoMaoImage img{
   width: 65px;
 }
 
-.LukeImage img{
+/* Luke About settings */
+.LukeImage img {
   width: 100px;
 }
 
-.JohannImage img{
+/* Johann About settings */
+.JohannImage img {
   width: 100px;
 }
 
-.NiclasImage img{
+/* Niclas About settings */
+.NiclasImage img {
   width: 100px;
 }
 
+/* Luke Text settings */
 .LukeText {
   margin-left: 0px;
   margin-top: 0px;
 }
 
+/* Seitenüberschrift Settings */
 h1 {
   text-align: left;
   margin-left: 110px;
