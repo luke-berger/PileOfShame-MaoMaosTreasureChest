@@ -2,6 +2,25 @@
 
 <!--- Johann über Luke -->
 
+## Luke Berger
+
+### Hobbys
+
+- Klavier
+- Gaming
+- Zeichnen
+- Lesen
+
+### Lieblingsessen
+
+Lukes Lieblingsessen ist **Krosse Ente vom Chinesen**
+
+### Interessanter Fakt
+
+Ein **Interresanter Fakt** über Luke ist, dass er immer darüber klagt Hunger zu haben, trotz der Tatsache, dass er durch Selbstverschuldung nur alle 24 Stunden Nahrung zu sich nimmt.
+
+---
+
 <!--- Luke über Niclas -->
 
 <!--- Niclas über Johann -->
