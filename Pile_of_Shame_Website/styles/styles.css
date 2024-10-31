@@ -1,9 +1,10 @@
-/* background color */
+/* header settings */
 header {
   background-color: #ab5841;
   margin-left: -22px;
 }
 
+/* background settings */
 body {
   font-family: 'Baskerville';
   background-color: #ffe7d7;
