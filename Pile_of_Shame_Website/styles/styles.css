@@ -107,3 +107,7 @@ h1 {
   margin-top: 10px;
   color: white;
 }
+
+nav {
+  transform: translateY(-5px);
+}
