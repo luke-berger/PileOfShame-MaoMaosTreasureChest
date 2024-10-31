@@ -1,6 +1,10 @@
 /* background color */
+header {
+  background-color: #ab5841;
+}
+
 body {
-  background-color: #ffe5b4;
+  background-color: #ffe7d7;
 }
 
 /* opacity for imprint text */
@@ -25,17 +29,18 @@ footer {
 .navElement {
   display: inline-block;
   padding-right: 10px;
+  color: white;
 }
 
 /* Divider below header */
 .DividerLineHeader {
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid #75261a;
   padding-top: 10px;
 }
 
 /* Divider below nav */
 .DividerLineNav {
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid #75261a;
   padding-top: 10px;
 }
 
@@ -70,4 +75,5 @@ h1 {
   text-align: left;
   margin-left: 85px;
   margin-top: 10px;
+  color: white;
 }
