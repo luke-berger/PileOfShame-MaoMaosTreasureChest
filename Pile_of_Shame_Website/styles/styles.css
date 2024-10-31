@@ -5,6 +5,7 @@ header {
 }
 
 body {
+  font-family: "Baskerville";
   background-color: #ffe7d7;
 }
 
@@ -18,6 +19,10 @@ body {
 .ImprintHeaders {
   color: #000; /* Fallback */
   color: rgb(0, 0, 0, 0.7);
+}
+
+.ImprintLink {
+  margin-left: 22px;
 }
 
 /* Trennlinie über footer */
