@@ -23,6 +23,24 @@ Ein **Interresanter Fakt** über Luke ist, dass er immer darüber klagt Hunger z
 
 <!--- Luke über Niclas -->
 
+## Niclas Prapavat
+
+### Hobbys
+
+- Schlafen
+- Game Design
+- Programmieren
+
+### Lieblingsessen
+
+Niclas’ Lieblingsessen ist **Sushi (mit extra Wasabi)**.
+
+### Ein interessanter Fakt
+
+Er ist Thailänder, aber kann kein Wort siamesisch…
+
+---
+
 <!--- Niclas über Johann -->
 
 ## Johann Gutzke
