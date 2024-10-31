@@ -1,9 +1,15 @@
+/* verhindert horizontales scrolling */
+body {
+  overflow-x: hidden;
+}
+
 /* header settings */
 header {
   background-color: #ab5841;
   margin-left: -22px;
+  width: 110%;
+  margin-top: -20px;
 }
-
 /* background settings */
 body {
   font-family: 'Baskerville';
@@ -22,11 +28,21 @@ body {
   color: rgb(0, 0, 0, 0.7);
 }
 
+/* Impressum Link Settings */
 .ImprintLink {
-  margin-left: 22px;
+  margin-left: 40px;
+  margin-bottom: 10px;
 }
 
-/* Trennlinie über footer */
+/* Sticky Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+}
+
+/* Trennlinie über footer und footer settings */
 footer {
   border-top: 3px solid #75261a;
   padding-top: 10px;
@@ -44,20 +60,22 @@ footer {
 /* Divider below header */
 .DividerLineHeader {
   border-bottom: 3px solid #75261a;
-  padding-top: 10px;
+  padding-top: 25px;
+  width: 110%;
 }
 
 /* Divider below nav */
 .DividerLineNav {
   border-bottom: 3px solid #75261a;
   padding-top: 10px;
+  width: 110%;
 }
 
 /* Logo settings */
 .MaoMaoImage img {
   position: absolute;
   left: 15px;
-  top: 15px;
+  top: 10px;
   width: 65px;
 }
 
