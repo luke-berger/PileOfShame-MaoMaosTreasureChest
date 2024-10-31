@@ -41,11 +41,16 @@ footer {
 
 .MaoMaoImage {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 15px;
+  top: 15px;
+}
+
+.MaoMaoImage img{
+  width: 65px;
 }
 
 h1 {
   text-align: left;
-  margin-left: 90px;
+  margin-left: 85px;
+  margin-top: 10px;
 }
