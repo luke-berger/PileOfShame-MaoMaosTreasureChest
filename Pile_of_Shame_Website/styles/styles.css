@@ -49,6 +49,23 @@ footer {
   width: 65px;
 }
 
+.LukeImage img{
+  width: 100px;
+}
+
+.JohannImage img{
+  width: 100px;
+}
+
+.NiclasImage img{
+  width: 100px;
+}
+
+.LukeText {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
 h1 {
   text-align: left;
   margin-left: 85px;
