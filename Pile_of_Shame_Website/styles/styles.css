@@ -79,6 +79,15 @@ footer {
   width: 65px;
 }
 
+.WelcomeImage_Index img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 110%;
+  left: -1px;
+}
+
 /* Luke About settings */
 .LukeImage img {
   width: 100px;
