@@ -16,6 +16,14 @@ body {
   background-color: #ffe7d7;
 }
 
+/* Index Flex Start */
+.IndexMainFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Index Flex End */
+
 /* opacity for imprint text */
 .ImprintSection {
   color: #000; /* Fallback */
@@ -79,14 +87,6 @@ footer {
   width: 65px;
 }
 
-.WelcomeImage_Index img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  width: 110%;
-  left: -1px;
-}
 
 /* Luke About settings */
 .LukeImage img {
