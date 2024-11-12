@@ -23,9 +23,14 @@ body {
 }
 
 .item1 {
-  align-self: start;
+  align-self: center;
+  margin-left: -22px;
 }
 /* Index Flex End */
+
+/* Navigation Flex Start */
+
+/* Navigation Flex End */
 
 /* opacity for imprint text */
 .ImprintSection {
