@@ -22,6 +22,9 @@ body {
   flex-direction: column;
 }
 
+.item1 {
+  align-self: start;
+}
 /* Index Flex End */
 
 /* opacity for imprint text */
@@ -69,14 +72,14 @@ footer {
 .DividerLineHeader {
   border-bottom: 3px solid #75261a;
   padding-top: 25px;
-  width: 110%;
+  width: 100%;
 }
 
 /* Divider below nav */
 .DividerLineNav {
   border-bottom: 3px solid #75261a;
   padding-top: 10px;
-  width: 110%;
+  width: 100%;
 }
 
 /* Logo settings */
