@@ -16,6 +16,18 @@ body {
   background-color: #ffe7d7;
 }
 
+/* Verhindert jegliches horizontale Scrollen */
+* {
+  box-sizing: border-box; /* Sorgt dafür, dass Padding und Border die Breite nicht erweitern */
+}
+
+
+/* Dividers */
+.DividerLineHeader, .DividerLineNav {
+  width: 100%; /* Breite auf Viewport anpassen */
+  margin: 0; /* Keine negative Margins, die das Layout verschieben */
+}
+
 /* Index Flex Start */
 .IndexMainFlex {
   display: flex;
@@ -24,7 +36,13 @@ body {
 
 .item1 {
   align-self: center;
-  margin-left: -22px;
+  margin: 0;
+}
+
+.item1 img {
+  width: 108vw;
+  height: auto;
+  display: block;
 }
 /* Index Flex End */
 
@@ -32,9 +50,33 @@ body {
 .Buttons {
   display: flex;
   align-items: start;
-  padding: 10px;
+  padding-left: 10px;
 }
 /* Navigation Flex End */
+
+
+@media (max-width: 768px) {
+  .Buttons {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .item1 img {
+    width: 103vw; /* Stellt sicher, dass das Bild die volle Breite des Viewports auf mobilen Geräten einnimmt */
+    height: auto;
+  }
+
+  .item1 {
+    padding: 0;
+    margin: 0;
+    width: 103vw;
+  }
+
+}
 
 /* opacity for imprint text */
 .ImprintSection {
@@ -141,7 +183,6 @@ nav {
   color: white;
   border: none;
   transition-duration: 0.8s;
-  padding: 16px 10px;
 }
 
 .NavButtons:hover {
@@ -156,5 +197,4 @@ nav {
   font-size: 130%;
   color: white;
   border: none;
-  padding: 16px 10px;
 }
