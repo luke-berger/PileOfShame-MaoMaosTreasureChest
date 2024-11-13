@@ -48,6 +48,12 @@ body {
 }
 /* Navigation Flex End */
 
+/* last Flex-Container */
+.ImprintLink {
+  display: flex;
+  justify-content: start;
+}
+
 
 @media (max-width: 768px) {
   .Buttons {
@@ -194,3 +200,4 @@ nav {
   border: none;
   text-decoration: underline;
 }
+
