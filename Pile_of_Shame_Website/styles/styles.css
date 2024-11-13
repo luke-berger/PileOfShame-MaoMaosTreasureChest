@@ -29,7 +29,11 @@ body {
 /* Index Flex End */
 
 /* Navigation Flex Start */
-
+.Buttons {
+  display: flex;
+  align-items: start;
+  padding: 10px;
+}
 /* Navigation Flex End */
 
 /* opacity for imprint text */
@@ -131,25 +135,26 @@ nav {
 
 /* Navigation Buttons */
 .NavButtons {
-  background-color: #aa634f;
+  background-color: #ab5841;
   font-family: Baskerville;
-  font-size: medium;
+  font-size: 130%;
   color: white;
-  border:2px solid #75261a;
-  height: 30px;
-  width: 90px;
+  border: none;
   transition-duration: 0.8s;
+  padding: 16px 10px;
 }
 
 .NavButtons:hover {
-  background-color: #78352b;
+  background-color: #a2543e;
   color: white;
+  cursor: pointer;
 }
 
 .NavButtonsVariant {
-  background-color: #8a4734;
+  background-color: #6734267b;
   font-family: Baskerville;
-  font-size: medium;
+  font-size: 130%;
   color: white;
-  border:2px solid #75261a
+  border: none;
+  padding: 16px 10px;
 }
