@@ -21,13 +21,6 @@ body {
   box-sizing: border-box; /* Sorgt dafür, dass Padding und Border die Breite nicht erweitern */
 }
 
-
-/* Dividers */
-.DividerLineHeader, .DividerLineNav {
-  width: 100%; /* Breite auf Viewport anpassen */
-  margin: 0; /* Keine negative Margins, die das Layout verschieben */
-}
-
 /* Index Flex Start */
 .IndexMainFlex {
   display: flex;
@@ -37,6 +30,7 @@ body {
 .item1 {
   align-self: center;
   margin: 0;
+  order: 0;
 }
 
 .item1 img {
@@ -58,7 +52,7 @@ body {
 @media (max-width: 768px) {
   .Buttons {
     align-items: center;
-    flex-direction: column;
+    flex-flow: column nowrap;
   }
 
   * {
@@ -186,9 +180,10 @@ nav {
 }
 
 .NavButtons:hover {
-  background-color: #a2543e;
+  background-color: #854533;
   color: white;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .NavButtonsVariant {
@@ -197,4 +192,5 @@ nav {
   font-size: 130%;
   color: white;
   border: none;
+  text-decoration: underline;
 }
