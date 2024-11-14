@@ -141,27 +141,40 @@ footer {
   width: 65px;
 }
 
-
-/* Luke About settings */
-.LukeImage img {
-  width: 100px;
+/* Container About settings */
+.grid-container {
+  display: grid;
+  grid-template-columns: 200x 200px 200px;
+  grid-template-rows: 250px 250px 250px;
+}
+.item-LukeImage {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+.item-LukeText {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+.item-NiclasImage {
+  grid-column: 1/1; 
+  grid-row: span 2/2;
 }
 
-/* Johann About settings */
-.JohannImage img {
-  width: 100px;
+.item-NiclasText {
+  grid-column: span 2/2; 
+  grid-row: span 2/2;
 }
 
-/* Niclas About settings */
-.NiclasImage img {
-  width: 100px;
+.item-JohannImage {
+  grid-column: span 1/1; 
+  grid-row: span 3/3; 
 }
 
-/* Luke Text settings */
-.LukeText {
-  margin-left: 0px;
-  margin-top: 0px;
+.item-JohannText {
+  grid-column: span 1/3; 
+  grid-row: span 1/3; 
 }
+
 
 /* Seitenüberschrift Settings */
 h1 {
