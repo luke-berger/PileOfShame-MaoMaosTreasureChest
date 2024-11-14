@@ -53,7 +53,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .Buttons {
     align-items: center;
     flex-flow: column nowrap;
@@ -86,12 +86,6 @@ body {
 .ImprintHeaders {
   color: #000; /* Fallback */
   color: rgb(0, 0, 0, 0.7);
-}
-
-/* Impressum Link Settings */
-.ImprintLink {
-  margin-left: 40px;
-  margin-bottom: 10px;
 }
 
 /* Sticky Footer */
