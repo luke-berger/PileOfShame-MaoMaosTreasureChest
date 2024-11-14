@@ -1,19 +1,15 @@
-/* verhindert horizontales scrolling */
-body {
-  overflow-x: hidden;
-}
-
 /* header settings */
 header {
   background-color: #ab5841;
-  margin-left: -22px;
-  width: 110%;
-  margin-top: -20px;
+  width: 100%;
 }
 /* background settings */
 body {
+  overflow-x: hidden;
   font-family: 'Baskerville';
   background-color: #ffe7d7;
+  width: 100%;
+  margin: 0px;
 }
 
 /* Verhindert jegliches horizontale Scrollen */
@@ -25,16 +21,18 @@ body {
 .IndexMainFlex {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .item1 {
   align-self: center;
   margin: 0;
   order: 0;
+  width: 100%;
 }
 
 .item1 img {
-  width: 108vw;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -66,14 +64,14 @@ body {
   }
 
   .item1 img {
-    width: 103vw; /* Stellt sicher, dass das Bild die volle Breite des Viewports auf mobilen Geräten einnimmt */
+    width: 100%; /* Stellt sicher, dass das Bild die volle Breite des Viewports auf mobilen Geräten einnimmt */
     height: auto;
   }
 
   .item1 {
     padding: 0;
     margin: 0;
-    width: 103vw;
+    width: 100%;
   }
 
 }
@@ -101,15 +99,13 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 110%;
+  width: 100%;
 }
 
 /* Trennlinie über footer und footer settings */
 footer {
   border-top: 3px solid #75261a;
-  padding-top: 10px;
   background-color: #ab5841;
-  margin-left: -22px;
 }
 
 /* Alignment Nav */
