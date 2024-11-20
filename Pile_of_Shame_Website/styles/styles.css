@@ -495,7 +495,7 @@ h1 {
   }
 
   .ImprintSection {
-    color: #e7c0bad0;
+    color: #e7c0ba97;
   }
 
   h1 {
@@ -515,6 +515,34 @@ h1 {
   
   .NavButtonsVariant {
     background-color: #5e1c0a;
+    color: #e7c0ba;
+  }
+}
+
+@media (prefers-contrast: more) {
+  header, body, footer {
+    border-style: solid;
+    border-color: white;
+  }
+
+  .NavButtons, .NavButtonsVariant, .NavButtons:hover {
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+  }
+
+  .MaoMaoImage img {
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+  }
+
+  .item1, .item-LukeImage img, .item-NiclasImage img, .item-JohannImage img {
+    border-style: solid;
+    border-color: white;
+  }
+
+  .ImprintSection {
     color: #e7c0ba;
   }
 }
