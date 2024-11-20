@@ -1,13 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Startseite</title>
+    <!--- Stylesheet reference-->
+    <link href="/Pile_of_Shame_Website/styles/styles.css" rel="stylesheet" />
+    <!--- Icon im Tab -->
+    <link rel="icon" type="image/png" href="/Pile_of_Shame_Website/images/maomao.png" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <header> 
+      <!--- Line between Header and Nav -->
+      <div class="DividerLineHeader"> 
+        <h1 class="BigTitel">Startseite</h1>
+      </div> 
+      <!--- Logo -->
+      <div class="MaoMaoImage">
+        <img
+          src="/Pile_of_Shame_Website/images/maomao.png"
+          alt="Logo of the Red Panda MaoMao"
+        />
+      </div>
+      <div class="DividerLineNav">
+        <!--- Navigation Buttons -->
+        <nav class="navigation">
+          <div class="Buttons">
+                <div class="Button1">
+                  <!--- Navigation zur Starseite--><a
+                  href="http://127.0.0.1:5500/Pile_of_Shame_Website/webpages/index.html" >
+                  <button class="NavButtonsVariant"> Startseite </button></a
+                  >
+                </div>
+
+                <div class="Button2">
+                  <!--- Navigation zur About-Page-->
+                  <a
+                    href="http://127.0.0.1:5500/Pile_of_Shame_Website/webpages/about.html"
+                    ><button class="NavButtons"> About </button></a
+                  >
+                </div>
+
+                <div class="Button3">
+                  <!--- Navigation zur Eingabe-Page-->
+                  <a href="http://127.0.0.1:5500/Pile_of_Shame_Website/webpages/input.html" >
+                    <button class="NavButtons"> Eingabe </button>
+                  </a>
+                </div>
+
+                <div class="Button4">
+                  <!--- Navigation zur Übersicht-Page-->
+                  <a href="http://127.0.0.1:5500/Pile_of_Shame_Website/webpages/overview.html" >
+                    <button class="NavButtons"> Übersicht </button>
+                  </a>
+                </div>
+
+                <div class="Button5">
+                  <!--- Navigation zur Impressum-Page-->
+                  <a
+                    href="http://127.0.0.1:5500/Pile_of_Shame_Website/webpages/imprint.html"
+                    ><button class="NavButtons"> Impressum </button></a
+                  >
+                </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--- Line between Nav and Main -->
+
+
+    <div class="IndexMainFlex">
+      <div class="item1">
+          <img
+            src="/Pile_of_Shame_Website/images/Welcome.png"
+            alt="Picture Of A Welcome-Sign"
+          />
+      </div>
+
+      <div class="item2">
+        <div class="MainText">
+          <!--- Sections for content-->
+          <h2>Anwendung der Webseite</h2> 
+          <p>
+            Der Pile of Shame Manager ist eine Anwendung, welche dazu dient, eine Sammlung an ungenutzen Medien zu erstellen, </br>
+            welche man plant zu einem späteren Zeitpunkt zu schauen oder zu Lesen. Die Anwendung soll Nutzern dabei helfen, nie die Übersicht zu Verlieren, </br>
+            durch einfaches Eintragen der Items in den Pile-of-Shame und der Suchfunktion wird dies gewährleistet. </br> 
+          </p>
+
+          <p>Auf der About-Page werden die einzelnen Mitglieder des Team vorgestellt. </br>
+          Hier können Sie sich informieren und sich mich den Ertellenden der Anwendung vertraut machen. <br>
+          </p>
+
+          <p>Auf der Eingabe-Seite ist es Ihnen möglich, das Eintragen von Items mit Namen, Beschreibung, Kosten und Kategorien vorzunehmen. <br>
+          Daraufhin werden diese Elemente sofort in die Datenbank aufgenommen. <br>
+          </p>
+
+          <p>Auf der Übersichts-Seite können Sie Ihre Items des Pile-Of-Shame ansehen. <br>
+          Außerdem ist Ihnen dort das Filtern der Daten möglich. <br>
+          </p>
+
+          <p>Im Impressum können sie rechtliche Angaben zum Betreiber der Webseite erlesen. <br>
+          </p>
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <!--- Link zur Impressum-Page-->
+      <div class="ImprintLink">
+      <a
+        href="http://127.0.0.1:5500/Pile_of_Shame_Website/webpages/imprint.html"
+        ><button class="NavButtons"> Impressum </button></a
+      >
+      </div>
+    </footer>
   </body>
 </html>
