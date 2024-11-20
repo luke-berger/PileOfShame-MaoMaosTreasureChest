@@ -23,6 +23,14 @@ footer {
   background-color: #ab5841;
 }
 
+/* Seitenüberschrift Settings */
+h1 {
+  text-align: left;
+  margin-left: 110px;
+  margin-top: 10px;
+  color: white;
+}
+
 /* Verhindert jegliches horizontale Scrollen */
 * {
   box-sizing: border-box; /* Sorgt dafür, dass Padding und Border die Breite nicht erweitern */
@@ -155,6 +163,67 @@ footer {
   grid-area: 1 / 1 / 1 / 1;
 }
 /* Grid Item End */
+
+/* opacity for imprint text */
+.ImprintSection {
+  color: #000; /* Fallback */
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 1vw;
+}
+
+/* opacity for imprint headers */
+.ImprintHeaders {
+  color: #000; /* Fallback */
+  color: rgb(0, 0, 0, 0.7);
+}
+
+/* Alignment Nav */
+.navElement {
+  display: inline-block;
+  padding-right: 10px;
+  color: white;
+}
+
+/* Divider below header */
+.DividerLineHeader {
+  border-bottom: 3px solid #75261a;
+  padding-top: 25px;
+  width: 100%;
+}
+
+/* Divider below nav */
+.DividerLineNav {
+  border-bottom: 3px solid #75261a;
+  padding-top: 10px;
+  width: 100%;
+}
+
+/* Navigation Buttons */
+.NavButtons {
+  background-color: #ab5841;
+  font-family: Baskerville;
+  font-size: 130%;
+  color: white;
+  border: none;
+  transition-duration: 0.8s;
+}
+
+.NavButtons:hover {
+  background-color: #854533;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.NavButtonsVariant {
+  background-color: #6734267b;
+  font-family: Baskerville;
+  font-size: 130%;
+  color: white;
+  border: none;
+  text-decoration: underline;
+}
 
 /* Mobile */
 @media (max-width: 470px) {
@@ -396,81 +465,18 @@ footer {
     font-size: 2vw;
   }
 }
-
-/* opacity for imprint text */
-.ImprintSection {
-  color: #000; /* Fallback */
-  color: rgba(0, 0, 0, 0.5);
-}
-
-/* opacity for imprint headers */
-.ImprintHeaders {
-  color: #000; /* Fallback */
-  color: rgb(0, 0, 0, 0.7);
-}
-
-/* Alignment Nav */
-.navElement {
-  display: inline-block;
-  padding-right: 10px;
-  color: white;
-}
-
-/* Divider below header */
-.DividerLineHeader {
-  border-bottom: 3px solid #75261a;
-  padding-top: 25px;
-  width: 100%;
-}
-
-/* Divider below nav */
-.DividerLineNav {
-  border-bottom: 3px solid #75261a;
-  padding-top: 10px;
-  width: 100%;
-}
-
-
-/* Seitenüberschrift Settings */
-h1 {
-  text-align: left;
-  margin-left: 110px;
-  margin-top: 10px;
-  color: white;
-}
-
-
-
-/* Navigation Buttons */
-.NavButtons {
-  background-color: #ab5841;
-  font-family: Baskerville;
-  font-size: 130%;
-  color: white;
-  border: none;
-  transition-duration: 0.8s;
-}
-
-.NavButtons:hover {
-  background-color: #854533;
-  color: white;
-  cursor: pointer;
-  text-decoration: underline;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.NavButtonsVariant {
-  background-color: #6734267b;
-  font-family: Baskerville;
-  font-size: 130%;
-  color: white;
-  border: none;
-  text-decoration: underline;
-}
-
 @media (prefers-color-scheme: dark) {
+
   header {
-    background-color: #49180c;
+    background-color: #6d2411;
+  }
+
+  .DividerLineHeader {
+    border-bottom: 3px solid #531d0f;
+  }
+
+  .DividerLineNav {
+    border-bottom: 3px solid #531d0f;
   }
   
   body {
@@ -479,23 +485,37 @@ h1 {
   }
 
   footer {
-    background-color: #2d0e09;
+    background-color: #6d2411;
+    border-top: 3px solid #531d0f;
+  }
+
+  /* opacity for imprint headers */
+  .ImprintHeaders {
+    color: #e7c0ba;
+  }
+
+  .ImprintSection {
+    color: #e7c0bad0;
+  }
+
+  h1 {
+    color: #e7c0ba;
   }
 
   .NavButtons {
-    background-color: #6734267b;
+    background-color: #6d2411;
     color: #e7c0ba;
   }
   
   .NavButtons:hover {
-    background-color: #6734267b;
+    background-color: #763d2d7b;
     color: #e7c0ba;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 #e7c0ba;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 #ff7964;
   }
   
   .NavButtonsVariant {
-    background-color: #854533;
+    background-color: #5e1c0a;
     color: #e7c0ba;
   }
-
 }
+
