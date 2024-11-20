@@ -13,6 +13,16 @@ body {
   color: #75261a;
 }
 
+/* Sticky Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 3px solid #75261a;
+  background-color: #ab5841;
+}
+
 /* Verhindert jegliches horizontale Scrollen */
 * {
   box-sizing: border-box; /* Sorgt dafür, dass Padding und Border die Breite nicht erweitern */
@@ -387,38 +397,6 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-    header {
-      background-color: #49180c;
-    }
-    
-    body {
-    color: #e7c0ba;
-    background-color: #2d0e09;
-    }
-
-    footer {
-      background-color: #2d0e09;
-    }
-
-    .NavButtons {
-      background-color: #6734267b;
-      color: #e7c0ba;
-    }
-    
-    .NavButtons:hover {
-      background-color: #6734267b;
-      color: #e7c0ba;
-      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 #e7c0ba;
-    }
-    
-    .NavButtonsVariant {
-      background-color: #854533;
-      color: #e7c0ba;
-    }
-
-}
-
 /* opacity for imprint text */
 .ImprintSection {
   color: #000; /* Fallback */
@@ -430,17 +408,6 @@ body {
   color: #000; /* Fallback */
   color: rgb(0, 0, 0, 0.7);
 }
-
-/* Sticky Footer */
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border-top: 3px solid #75261a;
-  background-color: #ab5841;
-}
-
 
 /* Alignment Nav */
 .navElement {
@@ -499,4 +466,36 @@ h1 {
   color: white;
   border: none;
   text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: #49180c;
+  }
+  
+  body {
+  color: #e7c0ba;
+  background-color: #2d0e09;
+  }
+
+  footer {
+    background-color: #2d0e09;
+  }
+
+  .NavButtons {
+    background-color: #6734267b;
+    color: #e7c0ba;
+  }
+  
+  .NavButtons:hover {
+    background-color: #6734267b;
+    color: #e7c0ba;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 #e7c0ba;
+  }
+  
+  .NavButtonsVariant {
+    background-color: #854533;
+    color: #e7c0ba;
+  }
+
 }
