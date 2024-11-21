@@ -213,7 +213,7 @@ h1 {
   color: white;
   cursor: pointer;
   text-decoration: underline;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.125);
 }
 
 .NavButtonsVariant {
@@ -510,7 +510,6 @@ h1 {
   .NavButtons:hover {
     background-color: #763d2d7b;
     color: #e7c0ba;
-    box-shadow: 0 12px 16px 0 #622c1d7b, 0 17px 50px 0 #632f26;
   }
   
   .NavButtonsVariant {
