@@ -253,8 +253,6 @@ h1 {
     top: 10px;
     width: 60px;
   }
-
-
 }
 
 @media (min-width: 471px) and (max-width: 1080px) {
@@ -284,7 +282,6 @@ h1 {
     top: 10px;
     width: 65px;
   }
-
 }
 
 @media (min-width: 1081px) and (max-width: 1919px) {
@@ -366,7 +363,6 @@ h1 {
   .TeamHeader {
     font-size: 2vw;
   }
-
 }
 
 @media (min-width: 1920px) {
@@ -456,7 +452,7 @@ h1 {
   .itemJohann3 {
     font-size: 1.5vw;
   }
-  
+
   .itemInsideGrid {
     font-size: 1.5vw;
   }
@@ -466,7 +462,6 @@ h1 {
   }
 }
 @media (prefers-color-scheme: dark) {
-
   header {
     background-color: #6d2411;
   }
@@ -478,10 +473,10 @@ h1 {
   .DividerLineNav {
     border-bottom: 3px solid #531d0f;
   }
-  
+
   body {
-  color: #e7c0ba;
-  background-color: #2d0e09;
+    color: #e7c0ba;
+    background-color: #2d0e09;
   }
 
   footer {
@@ -506,12 +501,12 @@ h1 {
     background-color: #6d2411;
     color: #e7c0ba;
   }
-  
+
   .NavButtons:hover {
     background-color: #763d2d7b;
     color: #e7c0ba;
   }
-  
+
   .NavButtonsVariant {
     background-color: #5e1c0a;
     color: #e7c0ba;
@@ -519,12 +514,16 @@ h1 {
 }
 
 @media (prefers-contrast: more) {
-  header, body, footer {
+  header,
+  body,
+  footer {
     border-style: solid;
     border-color: white;
   }
 
-  .NavButtons, .NavButtonsVariant, .NavButtons:hover {
+  .NavButtons,
+  .NavButtonsVariant,
+  .NavButtons:hover {
     border-style: solid;
     border-color: white;
     border-radius: 10px;
@@ -536,7 +535,10 @@ h1 {
     border-radius: 50px;
   }
 
-  .item1, .item-LukeImage img, .item-NiclasImage img, .item-JohannImage img {
+  .item1,
+  .item-LukeImage img,
+  .item-NiclasImage img,
+  .item-JohannImage img {
     border-style: solid;
     border-color: white;
   }
@@ -545,4 +547,3 @@ h1 {
     color: #e7c0ba;
   }
 }
-

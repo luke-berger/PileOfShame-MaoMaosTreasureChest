@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,11 +7,7 @@
     <!--- Stylesheet reference-->
     <link href="./../css/styles.css" rel="stylesheet" />
     <!--- Icon im Tab -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="./../pictures/maomao.png"
-    />
+    <link rel="icon" type="image/png" href="./../pictures/maomao.png" />
   </head>
   <body>
     <header>
@@ -22,9 +18,7 @@
       <!--- Logo -->
       <div class="MaoMaoImage">
         <!--- Klickable Logo-->
-        <a
-          href="./../../index.html"
-        >
+        <a href="./../../index.html">
           <img
             src="./../pictures/maomao.png"
             alt="Logo of the Red Panda MaoMao"
@@ -37,39 +31,36 @@
         <nav class="navigation">
           <div class="Buttons">
             <div class="Button1">
-              <!--- Navigation zur Starseite--><a
-              href="./../../index.html" >
-              <button class="NavButtons"> Startseite </button></a
+              <!--- Navigation zur Starseite--><a href="./../../index.html">
+                <button class="NavButtons">Startseite</button></a
               >
             </div>
 
             <div class="Button2">
               <!--- Navigation zur About-Page-->
-              <a
-                href="./about.html"
-                ><button class="NavButtons"> About </button></a
+              <a href="./about.html"
+                ><button class="NavButtons">About</button></a
               >
             </div>
 
             <div class="Button3">
               <!--- Navigation zur Eingabe-Page-->
-              <a href="./input.html" >
-                <button class="NavButtonsVariant"> Eingabe </button>
+              <a href="./input.html">
+                <button class="NavButtonsVariant">Eingabe</button>
               </a>
             </div>
 
             <div class="Button4">
               <!--- Navigation zur Übersicht-Page-->
-              <a href="./overview.html" >
-                <button class="NavButtons"> Übersicht </button>
+              <a href="./overview.html">
+                <button class="NavButtons">Übersicht</button>
               </a>
             </div>
 
             <div class="Button5">
               <!--- Navigation zur Impressum-Page-->
-              <a
-                href="./imprint.html"
-                ><button class="NavButtons"> Impressum </button></a
+              <a href="./imprint.html"
+                ><button class="NavButtons">Impressum</button></a
               >
             </div>
           </div>
@@ -102,12 +93,66 @@
       </p>
     </div>
 
+    <div class="flex h-screen w-screen items-center justify-center">
+      <p  class="w-2">
+        <form>
+          <label for="fname">Titel des Items</label><br>
+          <input type="text" id="fname" name="fname" />
+        </form>
+      </p>
+
+      <p class="w-2">
+        <form>
+          <label for="fname">Beschreibung</label><br>
+          <input type="text" id="fname" name="fname" />
+        </form>
+      </p>
+
+      <p class="w-2">
+        <form>
+          <label for="fname">Kaufpreis</label><br>
+          <input type="number" id="fname" name="fname" />
+        </form>
+      </p>
+
+      <p class="w-2">
+        <form>
+          <label for="fname">Kaufdatum</label><br>
+          <input type="date" id="fname" name="fname" />
+        </form>
+      </p>
+
+      <p class="w-16">
+        <form>
+          <label for="fname">Kategorien</label><br>
+          <input type="checkbox" id="input1" name="input1" value="Bücher"/>
+          <label for="input1">Bücher</label>
+          <input type="checkbox" id="input2" name="input2" value="Games"/>
+          <label for="input2">Games</label>
+          <input type="checkbox" id="input3" name="input3" value="Brettspiele"/>
+          <label for="input3">Brettspiele</label><br>
+          <input type="checkbox" id="input4" name="input4" value="Filme"/>
+          <label for="input4">Filme</label>
+          <input type="checkbox" id="input5" name="input5" value="Serien"/>
+          <label for="input5">Serien</label>
+          <input type="checkbox" id="input6" name="input6" value="Musikalben"/>
+          <label for="input6">Musikalben</label>
+        </form>
+      </p>
+
+      <p class="w-2">
+        <form>
+          <label for="fname">Bildupload</label><br>
+          <input type="file" accept=".png, .jpg, .jpeg" id="fname" name="fname" />
+        </form>
+      </p>
+    </div>
+
     <footer>
       <!--- Link zur Impressum-Page-->
       <div class="ImprintLink">
-        <a
-          href="./imprint.html"
-          ><button class="NavButtons"> Impressum </button></a
+        <a href="./imprint.html"
+          ><button class="NavButtons">Impressum</button></a
         >
       </div>
     </footer>
