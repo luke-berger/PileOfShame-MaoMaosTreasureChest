@@ -29,6 +29,12 @@ h1 {
   margin-left: 110px;
   margin-top: 10px;
   color: white;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.8vw;
 }
 
 /* Verhindert jegliches horizontale Scrollen */
@@ -65,6 +71,7 @@ h1 {
 .Buttons {
   display: flex;
   align-items: start;
+  gap: 10px;
   padding-left: 20px;
 }
 /* Navigation Flex End */
@@ -73,6 +80,7 @@ h1 {
 .ImprintLink {
   display: flex;
   justify-content: start;
+  margin-left: 1%;
 }
 
 /* Container About settings */
@@ -127,13 +135,13 @@ h1 {
 .item-NiclasImage img {
   width: 100px;
 }
-/* Niclas Items End */
+/* Niclas Items End */ 
 
 /* Johann Item */
 
-/* headline */
+/* headline */ 
 .itemJohann1 {
-  grid-area: 5 / 1 / 5 / span 2;
+  grid-area: 5 / 1 / 5 / span 2; 
 }
 
 /* Image */
@@ -255,7 +263,7 @@ h1 {
   }
 }
 
-@media (min-width: 471px) and (max-width: 1080px) {
+@media (min-width: 471px) and (max-width: 1024px) {
   .Buttons {
     align-items: center;
     flex-flow: row nowrap;
@@ -284,7 +292,7 @@ h1 {
   }
 }
 
-@media (min-width: 1081px) and (max-width: 1919px) {
+@media (min-width: 1025px) and (max-width: 1919px) {
   .Buttons {
     align-items: center;
     flex-flow: row nowrap;
@@ -314,7 +322,7 @@ h1 {
     position: absolute;
     left: 15px;
     top: 10px;
-    width: 70px;
+    width: 60px;
   }
 
   .grid-container {
@@ -387,7 +395,7 @@ h1 {
   }
 
   .MainText {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
   }
 
   .Buttons {
@@ -395,11 +403,11 @@ h1 {
     align-items: start;
     padding-left: 20px;
     gap: 4%;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
   }
 
   .BigTitel {
-    font-size: 3.5vw;
+    font-size: 3vw;
     padding-left: 30px;
   }
 
@@ -418,7 +426,7 @@ h1 {
   }
 
   .itemLuke1 {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
   }
 
   .item-LukeImage img {
@@ -426,11 +434,11 @@ h1 {
   }
 
   .itemLuke3 {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
   }
 
   .itemNiclas1 {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
   }
 
   .item-NiclasImage img {
@@ -438,11 +446,11 @@ h1 {
   }
 
   .itemNiclas3 {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
   }
 
   .itemJohann1 {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
   }
 
   .item-JohannImage img {
@@ -450,15 +458,15 @@ h1 {
   }
 
   .itemJohann3 {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
   }
 
   .itemInsideGrid {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
   }
 
   .TeamHeader {
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
 }
 @media (prefers-color-scheme: dark) {

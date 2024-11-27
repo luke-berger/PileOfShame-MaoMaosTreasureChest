@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eingabe</title>
     <!--- Stylesheet reference-->
+    <link href="./../css/tailwind.css" rel="stylesheet" />
     <link href="./../css/styles.css" rel="stylesheet" />
     <!--- Icon im Tab -->
     <link rel="icon" type="image/png" href="./../pictures/maomao.png" />
@@ -67,86 +68,83 @@
         </nav>
       </div>
     </header>
-    <!--- Sections for content-->
-    <div class="MainText">
-      <p>Hier können Sie Items in Ihren Pile-Of-Shame eintragen. <br /></p>
 
-      <p>
-        Es ist außerdem möglich, Namen, Beschreibungen, Kosten und
-        Kategorien einzutragen. <br />
-      </p>
+      <main class="flex flex-col justify-evenly xl:flex-row xl:justify-evenly xl:textxl 2xl:text-2xl">
+        <p  class="w-2">
+          <form>
+            <p class="my-1 font-bold">
+              <label for="fname">Titel des Items:</label><br>
+            </p>
+            <p class="text-red-800">
+              <input type="text" id="fname" name="fname" />
+            </p>
+          </form>
+        </p>
 
-      <p>
-        Weiterhin gibt es auch noch andere Eingaben die Sie hier tätigen können.
-        <br />
-      </p>
+        <p class="w-2">
+          <form>
+            <p class="my-1 font-bold">
+              <label for="fname">Beschreibung:</label><br>
+            </p>
+            <p class="text-red-800">
+              <input type="email" id="fname" name="fname" />
+            </p>
+          </form>
+        </p>
 
-      <p>
-        Das Alles ermöglicht es Ihnen Ihr persönlicher Pile-Of-Shame anzulegen
-        und zu füllen. <br />
-      </p>
+        <p class="w-2">
+          <form>
+            <p class="my-1 font-bold">
+              <label for="fname">Kaufpreis:</label><br>
+            </p>
+            <p class="text-red-800">
+              <input type="number" id="fname" name="fname" />
+            </p>
+          </form>
+        </p>
 
-      <p>
-        Am Ende muss angemerkt werden, dass alle Daten die Sie hier eingeben in
-        unsere Datenbank eingelesen werden, <br />
-        sodass Ihr Pile-Of-Shame so akkurat wie möglich ist. <br />
-      </p>
-    </div>
+        <p class="w-2">
+          <form>
+            <p class="my-1 font-bold">
+              <label for="fname">Kaufdatum:</label><br>
+            </p>
+            <p class="text-red-800">
+              <input type="date" id="fname" name="fname" />
+            </p>
+          </form>
+        </p>
 
-    <div class="flex h-screen w-screen items-center justify-center">
-      <p  class="w-2">
-        <form>
-          <label for="fname">Titel des Items</label><br>
-          <input type="text" id="fname" name="fname" />
-        </form>
-      </p>
+        <p class="w-16">
+          <form>
+            <p class="my-1 font-bold">
+              <label for="fname">Kategorien:</label><br>
+            </p>
+            <input type="checkbox" id="input1" name="input1" value="Bücher"/>
+            <label for="input1">Bücher</label>
+            <input type="checkbox" id="input2" name="input2" value="Games"/>
+            <label for="input2">Games</label>
+            <input type="checkbox" id="input3" name="input3" value="Brettspiele"/>
+            <label for="input3">Brettspiele</label><br>
+            <input type="checkbox" id="input4" name="input4" value="Filme"/>
+            <label for="input4">Filme</label>
+            <input type="checkbox" id="input5" name="input5" value="Serien"/>
+            <label for="input5">Serien</label>
+            <input type="checkbox" id="input6" name="input6" value="Musikalben"/>
+            <label for="input6">Musikalben</label>
+          </form>
+        </p>
 
-      <p class="w-2">
-        <form>
-          <label for="fname">Beschreibung</label><br>
-          <input type="text" id="fname" name="fname" />
-        </form>
-      </p>
-
-      <p class="w-2">
-        <form>
-          <label for="fname">Kaufpreis</label><br>
-          <input type="number" id="fname" name="fname" />
-        </form>
-      </p>
-
-      <p class="w-2">
-        <form>
-          <label for="fname">Kaufdatum</label><br>
-          <input type="date" id="fname" name="fname" />
-        </form>
-      </p>
-
-      <p class="w-16">
-        <form>
-          <label for="fname">Kategorien</label><br>
-          <input type="checkbox" id="input1" name="input1" value="Bücher"/>
-          <label for="input1">Bücher</label>
-          <input type="checkbox" id="input2" name="input2" value="Games"/>
-          <label for="input2">Games</label>
-          <input type="checkbox" id="input3" name="input3" value="Brettspiele"/>
-          <label for="input3">Brettspiele</label><br>
-          <input type="checkbox" id="input4" name="input4" value="Filme"/>
-          <label for="input4">Filme</label>
-          <input type="checkbox" id="input5" name="input5" value="Serien"/>
-          <label for="input5">Serien</label>
-          <input type="checkbox" id="input6" name="input6" value="Musikalben"/>
-          <label for="input6">Musikalben</label>
-        </form>
-      </p>
-
-      <p class="w-2">
-        <form>
-          <label for="fname">Bildupload</label><br>
-          <input type="file" accept=".png, .jpg, .jpeg" id="fname" name="fname" />
-        </form>
-      </p>
-    </div>
+        <p class="w-2">
+          <form>
+            <p class="my-1 font-bold">
+              <label for="fname">Bildupload:</label><br>
+            </p>
+            <input type="file" accept=".png, .jpg, .jpeg" id="fname" name="fname" />
+          </form>
+        </p>
+      </main>
+    <br>
+    <br>
 
     <footer>
       <!--- Link zur Impressum-Page-->
