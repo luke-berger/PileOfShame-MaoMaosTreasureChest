@@ -34,7 +34,11 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 1.8vw;
+  font-size: 22px;
+}
+
+h3 {
+  font-weight: bold;
 }
 
 /* Verhindert jegliches horizontale Scrollen */
@@ -135,13 +139,13 @@ h2 {
 .item-NiclasImage img {
   width: 100px;
 }
-/* Niclas Items End */ 
+/* Niclas Items End */
 
 /* Johann Item */
 
-/* headline */ 
+/* headline */
 .itemJohann1 {
-  grid-area: 5 / 1 / 5 / span 2; 
+  grid-area: 5 / 1 / 5 / span 2;
 }
 
 /* Image */
