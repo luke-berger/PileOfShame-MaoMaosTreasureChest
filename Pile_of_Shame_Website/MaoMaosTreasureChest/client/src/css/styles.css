@@ -26,15 +26,13 @@ footer {
 /* Seitenüberschrift Settings */
 h1 {
   text-align: left;
-  margin-left: 110px;
-  margin-top: 10px;
   color: white;
   font-weight: bold;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.8vw;
 }
 
 h3 {
@@ -199,14 +197,13 @@ h3 {
 /* Divider below header */
 .DividerLineHeader {
   border-bottom: 3px solid #75261a;
-  padding-top: 25px;
+  padding-bottom: 7px;
   width: 100%;
 }
 
 /* Divider below nav */
 .DividerLineNav {
   border-bottom: 3px solid #75261a;
-  padding-top: 10px;
   width: 100%;
 }
 
@@ -265,6 +262,11 @@ h3 {
     top: 10px;
     width: 60px;
   }
+
+  h2 {
+    font-weight: bold;
+    font-size: 5vw;
+  }
 }
 
 @media (min-width: 471px) and (max-width: 1024px) {
@@ -293,6 +295,11 @@ h3 {
     left: 15px;
     top: 10px;
     width: 65px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 2.8vw;
   }
 }
 

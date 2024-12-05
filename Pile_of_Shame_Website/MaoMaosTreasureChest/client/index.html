@@ -13,16 +13,20 @@
   <body>
     <header> 
       <!--- Line between Header and Nav -->
-      <div class="DividerLineHeader"> 
-        <h1 class="BigTitel">Startseite</h1>
-      </div> 
-      <!--- Logo -->
-      <div class="MaoMaoImage">
-        <img
-          src="./src/pictures/maomao.png"
-          alt="Logo of the Red Panda MaoMao"
-        />
+      <div class="DividerLineHeader">
+        <main class="flex flex-row justify-start">
+          <div class="w-16 pl-2 pt-2">
+            <img
+              src="./src/pictures/maomao.png"
+              alt="Logo of the Red Panda MaoMao"
+            />
+          </div>
+          <div class="self-center text-3xl pl-5 pt-2">
+            <h1>Startseite</h1>
+          </div>
+        </main>
       </div>
+
       <div class="DividerLineNav">
         <!--- Navigation Buttons -->
         <nav class="navigation">
@@ -108,12 +112,6 @@
               </p>
             </main>
 
-            <p class="w-96 self-center pt-10 md:pt-0">
-              <img
-                src="./src/pictures/TreasureChest.png"
-                alt="Picture of a TreasureChest"
-              />
-            </p>
           </div>
         </div>
       </div>
