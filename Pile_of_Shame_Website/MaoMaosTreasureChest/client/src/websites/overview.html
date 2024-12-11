@@ -7,6 +7,7 @@
     <!--- Stylesheet reference-->
     <link href="./../css/tailwind.css" rel="stylesheet" />
     <link href="./../css/styles.css" rel="stylesheet" />
+    <script type="module" src="./../scripts/cards.ts"></script>
     <!--- Icon im Tab -->
     <link rel="icon" type="image/png" href="./../pictures/maomao.png" />
   </head>
@@ -71,10 +72,10 @@
         </nav>
       </div>
     </header>
-    
+
     <main class="flex flex-col md:flex-row">
       <div>
-        <form class="flex flex-col justify-between flex-wrap items-center pt-3 sm:items-start sm:flex-row sm:justify-between sm:flex-nowrap md:flex-col pl-3">
+        <form class="flex flex-col pt-3 pr-6 sm:items-start sm:flex-row sm:justify-between sm:flex-nowrap md:flex-col pl-3">
           <p class="my-1 font-bold">
             <label for="fname">Filter:</label><br>
           </p>
@@ -109,8 +110,10 @@
         </form>
       </div>
 
+      <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-3"></div>
+
       <!--- Sections for content-->
-      <main class="flex flex-col justify-between pl-3 md:pl-20">
+      <main class="flex flex-col justify-between pl-3 md:pl-20 hidden">
 
         <div class="flexitem1"> 
           <h2> Bücher </h2>

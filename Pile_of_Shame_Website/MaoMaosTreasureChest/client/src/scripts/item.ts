@@ -1,5 +1,11 @@
 export type Item = {
-  id:string, name:string, description:string, price:number, date:string, categories:string[], image:string
+  id:string;
+  name:string;
+  description:string;
+  price:number;
+  date:string;
+  categories:string[];
+  image:string;
 };
 
 /*
