@@ -7,6 +7,7 @@
     <!--- Stylesheet reference-->
     <link href="./../css/tailwind.css" rel="stylesheet" />
     <link href="./../css/styles.css" rel="stylesheet" />
+    <script type="module" src="./../scripts/imagePreview.ts"></script> <!-- TypeScript-kompilierte Datei -->
     <!--- Icon im Tab -->
     <link rel="icon" type="image/png" href="./../pictures/maomao.png" />
   </head>
@@ -69,7 +70,7 @@
       </div>
     </header>
 
-      <main class="flex flex-col justify-evenly xl:flex-row xl:justify-evenly xl:textxl 2xl:text-2xl">
+      <main class="flex flex-col justify-evenly xl:justify-evenly xl:textxl 2xl:text-2xl">
         <p  class="w-2">
           <form>
             <p class="my-1 font-bold">
@@ -115,7 +116,7 @@
           </form>
         </p>
 
-        <p class="w-16">
+        <p class="w-3">
           <form>
             <p class="my-1 font-bold">
               <label for="fname">Kategorien:</label><br>
@@ -136,12 +137,18 @@
         </p>
 
         <p class="w-2">
-          <form>
-            <p class="my-1 font-bold">
-              <label for="fname">Bildupload:</label><br>
+          <main class="flex items-start flex-col">
+            <p>
+              <form>
+                <p class="my-1 font-bold">
+                  <label for="fname">Bildupload:</label><br>
+                </p>
+                <input type="file" accept=".png, .jpg, .jpeg" id="inputImg" name="fname"/>
+              </form>
             </p>
-            <input type="file" accept=".png, .jpg, .jpeg" id="fname" name="fname" />
-          </form>
+
+            <img class="hidden h-1/6 w-1/6 place-self-start" id="imgElem" alt="Dateieingabenvorschau" />
+          </main>
         </p>
       </main>
     <br>
