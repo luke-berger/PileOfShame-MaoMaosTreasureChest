@@ -8,6 +8,7 @@
     <link href="./../css/tailwind.css" rel="stylesheet" />
     <link href="./../css/styles.css" rel="stylesheet" />
     <script type="module" src="./../scripts/imagePreview.ts"></script> <!-- TypeScript-kompilierte Datei -->
+    <script type="module" src="./../scripts/event-listener.ts"></script>
     <!--- Icon im Tab -->
     <link rel="icon" type="image/png" href="./../pictures/maomao.png" />
   </head>
@@ -70,14 +71,14 @@
       </div>
     </header>
 
-      <main class="flex flex-col justify-evenly xl:justify-evenly xl:textxl 2xl:text-2xl">
+      <main class="flex flex-col justify-evenly xl:justify-evenly xl:textxl 2xl:text-2xl pl-3">
         <p  class="w-2">
           <form>
             <p class="my-1 font-bold">
               <label for="fname">Titel des Items:</label><br>
             </p>
             <p class="text-red-800">
-              <input type="text" id="fname" name="fname" />
+              <input class="rounded" type="text" id="input1" name="fname" />
             </p>
           </form>
         </p>
@@ -88,9 +89,8 @@
               <label for="fname">Beschreibung:</label><br>
             </p>
             <p class="text-red-800">
-              <textarea id="fname" name="fname" rows="3" cols="40"></textarea>
+              <textarea class="rounded" id="input2" name="fname" rows="3" cols="40"></textarea>
             </p>
-            <input type="submit" value="Submit"/>
           </form>
         </p>
 
@@ -100,7 +100,7 @@
               <label for="fname">Kaufpreis:</label><br>
             </p>
             <p class="text-red-800">
-              <input type="number" id="fname" name="fname" />
+              <input class="rounded" type="number" id="input3" name="fname" />
             </p>
           </form>
         </p>
@@ -111,7 +111,7 @@
               <label for="fname">Kaufdatum:</label><br>
             </p>
             <p class="text-red-800">
-              <input type="date" id="fname" name="fname" />
+              <input class="rounded" type="date" id="input4" name="fname" />
             </p>
           </form>
         </p>
@@ -121,17 +121,17 @@
             <p class="my-1 font-bold">
               <label for="fname">Kategorien:</label><br>
             </p>
-            <input type="checkbox" id="input1" name="input1" value="Bücher"/>
+            <input type="checkbox" id="input5" name="input1" value="Bücher"/>
             <label for="input1">Bücher</label>
-            <input type="checkbox" id="input2" name="input2" value="Games"/>
+            <input type="checkbox" id="input5" name="input2" value="Games"/>
             <label for="input2">Games</label>
-            <input type="checkbox" id="input3" name="input3" value="Brettspiele"/>
+            <input type="checkbox" id="input5" name="input3" value="Brettspiele"/>
             <label for="input3">Brettspiele</label><br>
-            <input type="checkbox" id="input4" name="input4" value="Filme"/>
+            <input type="checkbox" id="input5" name="input4" value="Filme"/>
             <label for="input4">Filme</label>
             <input type="checkbox" id="input5" name="input5" value="Serien"/>
             <label for="input5">Serien</label>
-            <input type="checkbox" id="input6" name="input6" value="Musikalben"/>
+            <input type="checkbox" id="input5" name="input6" value="Musikalben"/>
             <label for="input6">Musikalben</label>
           </form>
         </p>
@@ -143,16 +143,26 @@
                 <p class="my-1 font-bold">
                   <label for="fname">Bildupload:</label><br>
                 </p>
-                <input type="file" accept=".png, .jpg, .jpeg" id="inputImg" name="fname"/>
+                <input class="rounded" type="file" accept=".png, .jpg, .jpeg" id="inputImg" name="fname"/>
               </form>
             </p>
 
-            <img class="hidden h-1/6 w-1/6 place-self-start" id="imgElem" alt="Dateieingabenvorschau" />
+            <img class="hidden h-1/6 w-1/6 place-self-start pt-2" id="imgElem" alt="Dateieingabenvorschau" />
+
+            <p class="pt-6">
+              <div class="AddButton">
+                <button id="AddButton">Hinzufügen</button>
+              </div>
+            </p>
+            <div id="success" class="hidden text-green-500 pt-2 font-bold">Eintrag erfolgreich!</div>
+            <div id="fail" class="hidden text-red-600 pt-2 font-bold">Fehlende Angaben!</div>
+
           </main>
         </p>
       </main>
     <br>
     <br>
+    
 
     <footer>
       <!--- Link zur Impressum-Page-->

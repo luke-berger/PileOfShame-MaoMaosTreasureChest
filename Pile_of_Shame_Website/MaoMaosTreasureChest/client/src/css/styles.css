@@ -234,6 +234,25 @@ h3 {
   text-decoration: underline;
 }
 
+.AddButton {
+  background-color: #ab5841;
+  font-family: Baskerville;
+  font-size: 100%;
+  color: white;
+  border: solid black;
+  border-radius: 8px;
+  transition-duration: 0.8s;
+  padding: 2px 15px;
+}
+
+.AddButton:hover {
+  background-color: #854533;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+  transform: scale(1.06);
+}
+
 /* Mobile */
 @media (max-width: 470px) {
   .Buttons {
@@ -528,6 +547,17 @@ h3 {
 
   .NavButtonsVariant {
     background-color: #5e1c0a;
+    color: #e7c0ba;
+  }
+
+  .AddButton {
+    background-color: #6d2411;
+    color: #e7c0ba;
+    border: solid #e7c0ba;
+  }
+
+  .AddButton:hover {
+    background-color: #763d2d7b;
     color: #e7c0ba;
   }
 }
