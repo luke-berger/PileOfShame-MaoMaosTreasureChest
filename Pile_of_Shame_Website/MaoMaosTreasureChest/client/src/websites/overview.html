@@ -75,34 +75,41 @@
 
     <main class="flex flex-col md:flex-row">
       <div>
-        <form class="flex flex-col pt-3 pr-6 sm:items-start sm:flex-row sm:justify-between sm:flex-nowrap md:flex-col pl-3">
-          <p class="my-1 font-bold">
+        <form class="flex flex-col p-3 sm:items-start sm:flex-row sm:justify-between md:flex-col">
+          <div class="my-1 font-bold">
             <label for="fname">Filter:</label><br>
-          </p>
-          <p>
-          <input type="checkbox" id="input1" name="input1" value="Bücher"/>
-          <label for="input1">Bücher</label>
-          </p>
-          <p>
-          <input type="checkbox" id="input2" name="input2" value="Games"/>
-          <label for="input2">Games</label>
-          </p>
-          <p>
-          <input type="checkbox" id="input3" name="input3" value="Brettspiele"/>
-          <label for="input3">Brettspiele</label>
-          </p>
-          <p>
-          <input type="checkbox" id="input4" name="input4" value="Filme"/>
-          <label for="input4">Filme</label>
-          </p>
-          <p>
-          <input type="checkbox" id="input5" name="input5" value="Serien"/>
-          <label for="input5">Serien</label>
-          </p>
-          <p>
-          <input type="checkbox" id="input6" name="input6" value="Musikalben"/>
-          <label for="input6">Musikalben</label>
-          </p>
+          </div>
+
+          <div class="items-center">
+            <input type="checkbox" id="input1" name="input1" value="Bücher"/>
+            <label for="input1">Bücher</label>
+          </div>
+
+          <div class="items-center">
+            <input type="checkbox" id="input2" name="input2" value="Games"/>
+            <label for="input2">Games</label>
+          </div>
+
+          <div class="items-center">
+            <input type="checkbox" id="input3" name="input3" value="Brettspiele"/>
+            <label for="input3">Brettspiele</label>
+          </div>
+
+          <div class="items-center">
+            <input type="checkbox" id="input4" name="input4" value="Filme"/>
+            <label for="input4">Filme</label>
+          </div>
+
+          <div class="items-center">
+            <input type="checkbox" id="input5" name="input5" value="Serien"/>
+            <label for="input5">Serien</label>
+          </div>
+
+          <div class="items-center">
+            <input type="checkbox" id="input6" name="input6" value="Musikalben"/>
+            <label for="input6">Musikalben</label>
+          </div>
+
           <br>
           <input type="submit" value="Suchen"/>
           <br>
@@ -110,7 +117,7 @@
         </form>
       </div>
 
-      <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-3"></div>
+      <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-3 pr-3"></div>
 
       <!--- Sections for content-->
       <main class="flex flex-col justify-between pl-3 md:pl-20 hidden">
