@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fileInput.classList.remove('border-4', 'border-red-600');
       }
 
-      if(iptValue1 && iptValue2 && iptValue3 && iptValue4 && files) {
+      if(iptValue1 && iptValue2 && iptValue3 && iptValue4 && (!files || files.length === 1)) {
         success?.classList.remove('hidden');
         fail?.classList.add('hidden');
       } else {
