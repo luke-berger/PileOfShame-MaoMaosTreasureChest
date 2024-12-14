@@ -242,7 +242,8 @@ h3 {
   border: solid black;
   border-radius: 8px;
   transition-duration: 0.8s;
-  padding: 2px 15px;
+  padding: 5px 0px;
+  text-align: center;
 }
 
 .AddButton:hover {
@@ -251,6 +252,13 @@ h3 {
   cursor: pointer;
   text-decoration: underline;
   transform: scale(1.06);
+}
+
+.test {
+  background-color: #8b341c;
+  width: 50vw;
+  padding: 1vw;
+  border-radius: 0.8vw;
 }
 
 /* Mobile */
@@ -286,6 +294,10 @@ h3 {
     font-weight: bold;
     font-size: 5vw;
   }
+
+  .test {
+    width: 100vw;
+  }
 }
 
 @media (min-width: 471px) and (max-width: 1024px) {
@@ -319,6 +331,10 @@ h3 {
   h2 {
     font-weight: bold;
     font-size: 2.8vw;
+  }
+
+  .test {
+    width: 75vw;
   }
 }
 
