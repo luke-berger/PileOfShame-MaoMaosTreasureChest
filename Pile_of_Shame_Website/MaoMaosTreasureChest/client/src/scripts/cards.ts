@@ -39,8 +39,14 @@ export async function fetchGet(): Promise<Item[]> {
     
     return data;
   } catch (error) {
-    console.error('Fehler beim Abrufen der Daten:', error);
-    throw error; // Fehler erneut werfen
+    if (error instanceof SyntaxError) {
+      console.error('JSON-Syntaxfehler:', error.message);
+      alert('Fehlerhafte Antwort vom Server. JSON-Format ungültig.');
+    } else {
+      console.error('Fehler beim Abrufen der Daten:', error);
+      alert('Fehler beim Abrufen der Daten vom Server.');
+    }
+    throw error;
   }
 }
 
@@ -64,7 +70,13 @@ export async function fetchPost(newItem: Item): Promise<void> {
     const data = await response.json();
     console.log('Neues Item erfolgreich hinzugefügt:', data);
   } catch (error) {
-    console.error('Fehler beim Hinzufügen des neuen Items:', error);
+    if (error instanceof SyntaxError) {
+      console.error('JSON-Syntaxfehler:', error.message);
+      alert('Das JSON-Format ist fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.');
+    } else {
+      console.error('Fehler beim Senden der Daten:', error);
+      alert('Es ist ein Fehler beim Senden der Daten aufgetreten.');
+    }
   }
 }
 
