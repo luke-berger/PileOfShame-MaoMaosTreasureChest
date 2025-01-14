@@ -1,5 +1,5 @@
 import { Item } from './item';
-import { encodeImageFileAsBase64 } from './imgEncoder'
+import { encodeImageFileAsBase64 } from './imgEncoder';
 import { fetchPost } from './cards';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const name = inpElem1.value.trim();
     const description = inpElem2.value.trim();
-    const price = parseFloat(iptValue3);  // Preis als Zahl konvertieren
+    const price = parseFloat(iptValue3); // Preis als Zahl konvertieren
     const date = inpElem4.value.trim();
 
     // Kategorien: Alle angekreuzten Checkboxen in ein Array umwandeln
@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const files = fileInput.files;
     const file = files ? files[0] : null; // Wenn keine Datei ausgewählt wurde, wird null zugewiesen
-
 
     // Eingabeprüfungen für jedes Feld
     if (!iptValue1) {
@@ -74,8 +73,15 @@ document.addEventListener('DOMContentLoaded', () => {
       // Kein Datei-Upload
       fileInput.classList.add('border-4', 'border-red-600');
       fail?.classList.remove('hidden');
+    } else if (file && file.size > 2 * 1024 * 1024) {
+      // Maximale Dateigröße überschritten
+      console.error('Datei überschreitet die maximale Größe von 2 MB.');
+      alert('Das Bild ist zu groß. Bitte laden Sie ein Bild unter 2 MB hoch.');
+      fileInput.classList.add('border-4', 'border-red-600');
+      fail?.classList.remove('hidden');
+      return;
     } else {
-      // Datei-Upload vorhanden
+      // Datei-Upload vorhanden und Größe akzeptabel
       fileInput.classList.remove('border-4', 'border-red-600');
     }
 
@@ -83,19 +89,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (iptValue1 && iptValue2 && iptValue3 && iptValue4 && !isNaN(price) && (!files || files.length === 1)) {
       success?.classList.remove('hidden');
       fail?.classList.add('hidden');
-    
+
       let encodedImage = '';
-    
+
       if (file) {
         try {
           encodedImage = await encodeImageFileAsBase64(file); // Base64-String für das Bild generieren
         } catch (error) {
           console.error('Fehler beim Kodieren des Bildes:', error);
+          alert('Fehler beim Verarbeiten des Bildes.');
           fail?.classList.remove('hidden');
           return;
         }
       }
-    
+
       const newItem: Item = {
         name,
         description,
@@ -104,11 +111,17 @@ document.addEventListener('DOMContentLoaded', () => {
         categories,
         image: encodedImage,
       };
-    
+
       console.log('Erstelltes Item:', newItem);
-    
-      // Sende das neue Item an den Server
-      await fetchPost(newItem);
+
+      try {
+        // Sende das neue Item an den Server
+        await fetchPost(newItem);
+      } catch (error) {
+        console.error('Fehler beim Senden des Items:', error);
+        alert('Fehler beim Senden der Daten. Bitte versuchen Sie es später erneut.');
+        fail?.classList.remove('hidden');
+      }
     } else {
       success?.classList.add('hidden');
     }
