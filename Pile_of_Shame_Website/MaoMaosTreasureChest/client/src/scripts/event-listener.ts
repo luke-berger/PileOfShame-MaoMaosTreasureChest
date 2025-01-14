@@ -1,5 +1,6 @@
 import { Item } from './item';
 import { encodeImageFileAsBase64 } from './imgEncoder'
+import { fetchPost } from './cards';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Button und Input-Elemente finden
@@ -82,11 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (iptValue1 && iptValue2 && iptValue3 && iptValue4 && !isNaN(price) && (!files || files.length === 1)) {
       success?.classList.remove('hidden');
       fail?.classList.add('hidden');
-
+    
       let encodedImage = '';
-
+    
       if (file) {
-        // Nur wenn eine Datei existiert, das Bild codieren
         try {
           encodedImage = await encodeImageFileAsBase64(file); // Base64-String für das Bild generieren
         } catch (error) {
@@ -95,24 +95,20 @@ document.addEventListener('DOMContentLoaded', () => {
           return;
         }
       }
-
+    
       const newItem: Item = {
         name,
         description,
         price,
         date,
         categories,
-        image: encodedImage, // Das Base64-encoded Bild hinzufügen
+        image: encodedImage,
       };
-
-        // Ausgabe in der Konsole
-        console.log('Erstelltes Item:', newItem);
-
-        const jsonString = JSON.stringify(newItem);
-
-        // Ausgabe des JSON-Strings in der Konsole
-        console.log('JSON String des Items:', jsonString);
-        
+    
+      console.log('Erstelltes Item:', newItem);
+    
+      // Sende das neue Item an den Server
+      await fetchPost(newItem);
     } else {
       success?.classList.add('hidden');
     }

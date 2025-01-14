@@ -13,8 +13,9 @@ type filterFn = (inputArray: Item[], categoryArray: string[]) => Item[];
  * Filters given inputArray by given categoryArray
  */
 const filterByCategory: filterFn = (inputArray, categoryArray) => {
-  /* ToDo */
-  return new Array<Item>();
+  return inputArray.filter(item =>
+    item.categories.some(category => categoryArray.includes(category))
+  );
 };
 
 export default filterByCategory;

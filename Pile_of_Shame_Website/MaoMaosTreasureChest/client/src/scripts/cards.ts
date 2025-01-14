@@ -15,28 +15,56 @@ const filterByCategory: filterFn = (inputArray, categoryArray) => {
 
 // Asynchrone Funktion fetchGet
 export async function fetchGet(): Promise<Item[]> {
-  const url = 'https://intersys.imis.uni-luebeck.de/api/pile-of-shame';
-
+  const baseUrl = 'http://127.0.0.1:3002/items?'; // Dein API-Endpunkt
+  const searchParams = new URLSearchParams();
+  
+  // Wenn Kategorien ausgewählt sind, werden diese als URL-Parameter hinzugefügt
+  if (selectedCategories.length > 0) {
+    selectedCategories.forEach(category => searchParams.append('search', category));
+  }
+  
+  const url = `${baseUrl}?${searchParams.toString()}`;
+  
   try {
     // Mit der Fetch-API einen GET-Request an den Server senden
     const response = await fetch(url, {
       method: 'GET', // HTTP-Methode GET
     });
+    
+    if (!response.ok) {
+      throw new Error(`Server returned status: ${response.status}`);
+    }
+    
+    const data: Item[] = await response.json();
+    
+    return data;
+  } catch (error) {
+    console.error('Fehler beim Abrufen der Daten:', error);
+    throw error; // Fehler erneut werfen
+  }
+}
 
-    // Überprüfen, ob die Antwort erfolgreich war
+export async function fetchPost(newItem: Item): Promise<void> {
+  const baseUrl = 'http://127.0.0.1:3001/api/items'; // Dein API-Endpunkt
+  const url = `${baseUrl}`;
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newItem), // Das neue Item wird als JSON gesendet
+    });
+
     if (!response.ok) {
       throw new Error(`Server returned status: ${response.status}`);
     }
 
-    // Parsen der JSON-Antwort
-    const data: Item[] = await response.json();
-
-    // Rückgabe der TypeScript-Objekte
-    return data;
+    const data = await response.json();
+    console.log('Neues Item erfolgreich hinzugefügt:', data);
   } catch (error) {
-    // Fehler abfangen und in der Konsole ausgeben
-    console.error('Fehler beim Abrufen der Daten:', error);
-    throw error; // Fehler erneut werfen, um den Aufrufer zu informieren
+    console.error('Fehler beim Hinzufügen des neuen Items:', error);
   }
 }
 
@@ -125,34 +153,25 @@ function createCards(items: Item[]): void {
 
 // Event-Listener nach DOM-Laden hinzufügen
 document.addEventListener('DOMContentLoaded', async () => {
-  // Daten abrufen
   const items = await fetchGet();
-
-  // Alle Checkbox-Elemente finden
   const categoryCheckboxes = document.querySelectorAll('input[name^="input"]');
 
-  // Initial alle Karten anzeigen
   createCards(items);
 
-  // Event-Listener für jede Checkbox hinzufügen
   categoryCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', (event) => {
       const target = event.target as HTMLInputElement;
 
       if (target.checked) {
-        // Hinzufügen, wenn die Checkbox ausgewählt wurde
         if (!selectedCategories.includes(target.value)) {
           selectedCategories.push(target.value);
         }
       } else {
-        // Entfernen, wenn die Checkbox abgewählt wurde
         selectedCategories = selectedCategories.filter((category) => category !== target.value);
       }
 
-      // Gefilterte Karten erstellen
-      console.log("Cat-Array: ", selectedCategories)
       const filteredItems = filterByCategory(items, selectedCategories);
-      createCards(filteredItems); // Aktualisierung der Karten
+      createCards(filteredItems);
     });
   });
 });
