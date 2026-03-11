@@ -2,7 +2,7 @@
 
 ## Description
 
-This web application was developed as a small university project for the *Interactive Systems* module. It was our first hands-on experience with web development, including basic HTML, CSS, and client-server interaction, and allowed us to explore building interactive web applications from scratch.
+This web application was developed as a small university project for the *Interactive Systems* module. It was our first hands-on experience with web development, including basic HTML, CSS, Type- and JavaScript and client-server interaction.
 
 The application is a **PileOfShame website**, designed to help users create and manage a personal collection of media they plan to watch. It serves as a reminder for movies, shows, or other media items that have been added to their watchlist. There is also a small filter option to filter for tags such as games, books etc.
 
